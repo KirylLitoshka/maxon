@@ -1,0 +1,182 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header, .main, .footer {
+  padding: 20px 0;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav_menu {
+  list-style-type: none;
+  display: flex;
+  column-gap: 20px;
+}
+
+.header-nav_menu-item {
+  font-weight: 500;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.main-title {
+  font-size: 52px;
+}
+
+.section {
+  padding: 10px 0;
+}
+
+.section p {
+  font-weight: 300;
+}
+
+.section-title {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.section-list {
+  padding: 20px 0;
+  list-style-type: circle;
+  margin-left: 50px;
+}
+
+.section_hero {
+  display: flex;
+  align-items: center;
+}
+
+.section_hero img {
+  width: 60%;
+}
+
+.casino-list {
+  padding: 20px 0;
+  display: flex;
+  flex-flow: wrap row;
+  row-gap: 40px;
+  column-gap: 2.5%;
+}
+
+.casino-list-item {
+  max-width: 23%;
+}
+
+.casino-list-item-title {
+  font-weight: 500;
+  text-align: center;
+}
+
+.casino-list-item-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.casino-list-item-diff ul {
+  list-style: none;
+  padding-left: 15px;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.casino-list-item-diff p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.casino-list-item-diff-pluses li,
+.casino-list-item-diff-minuses li {
+  position: relative;
+  padding-left: 15px;
+}
+
+.casino-list-item-diff-minuses li::before,
+.casino-list-item-diff-pluses li::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 12px;
+  width: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.casino-list-item-diff-pluses li:before {
+  background-image: url(../img/svg/ok.svg);
+}
+
+.casino-list-item-diff-minuses li::before {
+  background-image: url(../img/svg/err.svg);
+}
+
+.casion-list-item-button {
+  margin-top: 25px;
+  padding: 0 20px;
+}
+
+.casion-list-item-link {
+  display: block;
+  padding: 15px 0;
+  border: 1px solid blue;
+  background-color: blue;
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 5px;
+  transition: all ease-in 0.2s;
+}
+
+.casion-list-item-link:hover {
+  scale: 1.1;
+  background-color: white;
+  color: blue
+}
+
+@media screen and (max-width: 1440px) {
+  .page-wrapper {
+    padding: 0 10px;
+  }
+}
