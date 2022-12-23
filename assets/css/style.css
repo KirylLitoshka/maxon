@@ -105,7 +105,11 @@ a {
   padding: 10px 0;
   display: flex;
   justify-content: center;
-  height: 300px;
+  max-height: 300px;
+}
+
+.section-guide__image img{
+  object-fit: contain;
 }
 
 .casino-list {
@@ -213,12 +217,16 @@ a {
     font-size: 1.8em;
   }
 
-  .casino-list {
-    justify-content: space-between;
-  }
-
   .casino-list__item {
     max-width: 30%;
+  }
+
+  .section-guide__image img {
+    width: 100%;
+  }
+
+  .casino-list {
+    column-gap: 5%;
   }
 }
 
@@ -238,6 +246,11 @@ a {
 
   .casino-list__item {
     max-width: 45%;
+  }
+
+  .casino-list {
+    justify-content: space-between;
+    column-gap: normal;
   }
 }
 
